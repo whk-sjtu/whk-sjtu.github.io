@@ -1,0 +1,401 @@
+[
+  {
+    "id": "discrete-tokens-review",
+    "title": "Recent Advances in Discrete Speech Tokens: A Review",
+    "authors": [
+      "Yiwei Guo",
+      "Zhihan Li",
+      "Hankun Wang",
+      "Bohan Li",
+      "Chongtian Shao",
+      "Hanglei Zhang",
+      "Chenpeng Du",
+      "Xie Chen",
+      "Shujie Liu",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "IEEE TPAMI",
+    "sort_date": "2026-04",
+    "first_posted": "2025-02-10",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2502.06490",
+      "Publisher": "https://doi.org/10.1109/TPAMI.2025.3643619"
+    },
+    "abstract": "The rapid advancement of speech generation technologies in the era of large language models (LLMs) has established discrete speech tokens as a foundational paradigm for speech representation. These tokens, characterized by their discrete, compact, and concise nature, are not only advantageous for efficient transmission and storage, but also inherently compatible with the language modeling framework, enabling seamless integration of speech into text-dominated LLM architectures. Current research categorizes discrete speech tokens into two principal classes: acoustic tokens and semantic tokens, each of which has evolved into a rich research domain characterized by unique design philosophies and methodological approaches. This survey systematically synthesizes the existing taxonomy and recent innovations in discrete speech tokenization, conducts a critical examination of the strengths and limitations of each paradigm, and presents systematic experimental comparisons across token types. Furthermore, we identify persistent challenges in the field and propose potential research directions, aiming to offer actionable insights to inspire future advancements in the development and application of discrete speech tokens.",
+    "abstract_source": "https://arxiv.org/abs/2502.06490"
+  },
+  {
+    "id": "speech-llm-survey",
+    "title": "A Survey on Speech Large Language Models for Understanding",
+    "authors": [
+      "Jing Peng",
+      "Yucheng Wang",
+      "Bohan Li",
+      "Yiwei Guo",
+      "Hankun Wang",
+      "Yangui Fang",
+      "Yu Xi",
+      "Haoyu Li",
+      "Xu Li",
+      "Ke Zhang",
+      "Shuai Wang",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "IEEE JSTSP",
+    "sort_date": "2026-01",
+    "first_posted": "2024-10-24",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2410.18908",
+      "Publisher": "https://doi.org/10.1109/JSTSP.2025.3640535"
+    },
+    "abstract": "Speech understanding is essential for interpreting the diverse forms of information embedded in spoken language, including linguistic, paralinguistic, and non-linguistic cues that are vital for effective human-computer interaction. The rapid advancement of large language models (LLMs) has catalyzed the emergence of Speech Large Language Models (Speech LLMs), which marks a transformative shift toward general-purpose speech understanding systems. To further clarify and systematically delineate task objectives, in this paper, we formally define the concept of speech understanding and introduce a structured taxonomy encompassing its informational, functional, and format dimensions. Within this scope of definition, we present a comprehensive review of current Speech LLMs, analyzing their architectures through a three-stage abstraction: Modality Feature Extraction, Modality Information Fusion, and LLM Inference. In addition, we examine training strategies, discuss representative datasets, and review evaluation methodologies adopted in the field. Based on empirical analyses and experimental evidence, we identify two key challenges currently facing Speech LLMs: instruction sensitivity and degradation in semantic reasoning and propose concrete directions for addressing these issues. Through this systematic and detailed survey, we aim to offer a foundational reference for researchers and practitioners working toward more robust, generalizable, and human-aligned Speech LLMs.",
+    "abstract_source": "https://arxiv.org/abs/2410.18908"
+  },
+  {
+    "id": "vall-t",
+    "title": "VALL-T: Decoder-Only Generative Transducer for Robust and Decoding-Controllable Text-to-Speech",
+    "authors": [
+      "Chenpeng Du",
+      "Yiwei Guo",
+      "Hankun Wang",
+      "Yifan Yang",
+      "Zhikang Niu",
+      "Shuai Wang",
+      "Hui Zhang",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2025,
+    "venue": "ICASSP",
+    "sort_date": "2025-04",
+    "first_posted": "2024-01-25",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2401.14321",
+      "Publisher": "https://ieeexplore.ieee.org/abstract/document/10890943",
+      "Demo": "https://cpdu.github.io/vallt/"
+    },
+    "abstract": "Recent TTS models with decoder-only Transformer architecture, such as SPEAR-TTS and VALL-E, achieve impressive naturalness and demonstrate the ability for zero-shot adaptation given a speech prompt. However, such decoder-only TTS models lack monotonic alignment constraints, sometimes leading to hallucination issues such as mispronunciation, word skipping and repeating. To address this limitation, we propose VALL-T, a generative Transducer model that introduces shifting relative position embeddings for input phoneme sequence, explicitly indicating the monotonic generation process while maintaining the architecture of decoder-only Transformer. Consequently, VALL-T retains the capability of prompt-based zero-shot adaptation and demonstrates better robustness against hallucinations with a relative reduction of 28.3% in the word error rate.",
+    "abstract_source": "https://arxiv.org/abs/2401.14321"
+  },
+  {
+    "id": "lscodec",
+    "title": "LSCodec: Low-Bitrate and Speaker-Decoupled Discrete Speech Codec",
+    "authors": [
+      "Yiwei Guo",
+      "Zhihan Li",
+      "Chenpeng Du",
+      "Hankun Wang",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2025,
+    "venue": "Interspeech",
+    "sort_date": "2025-08",
+    "first_posted": "2024-10-21",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2410.15764",
+      "Publisher": "https://www.isca-archive.org/interspeech_2025/guo25_interspeech.html",
+      "Demo": "https://cantabile-kwok.github.io/LSCodec/",
+      "Code": "https://github.com/X-LANCE/LSCodec-Inference"
+    },
+    "abstract": "Although discrete speech tokens have exhibited strong potential for language model-based speech generation, their high bitrates and redundant timbre information restrict the development of such models. In this work, we propose LSCodec, a discrete speech codec that has both low bitrate and speaker decoupling ability. LSCodec adopts a multi-stage unsupervised training framework with a speaker perturbation technique. A continuous information bottleneck is first established, followed by vector quantization that produces a discrete speaker-decoupled space. A discrete token vocoder finally refines acoustic details from LSCodec. By reconstruction evaluations, LSCodec demonstrates superior intelligibility and audio quality with only a single codebook and smaller vocabulary size than baselines. Voice conversion and speaker probing experiments prove the excellent speaker disentanglement of LSCodec, and ablation study verifies the effectiveness of the proposed training framework.",
+    "abstract_source": "https://arxiv.org/abs/2410.15764"
+  },
+  {
+    "id": "vadusa",
+    "title": "Fast and High-Quality Auto-Regressive Speech Synthesis via Speculative Decoding",
+    "authors": [
+      "Bohan Li",
+      "Hankun Wang",
+      "Situo Zhang",
+      "Yiwei Guo",
+      "Kai Yu"
+    ],
+    "year": 2025,
+    "venue": "ICASSP",
+    "sort_date": "2025-04",
+    "first_posted": "2024-10-29",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2410.21951",
+      "Publisher": "https://doi.org/10.1109/icassp49660.2025.10888194"
+    },
+    "abstract": "The auto-regressive architecture, like GPTs, is widely used in modern Text-to-Speech (TTS) systems. However, it incurs substantial inference time, particularly due to the challenges in the next-token prediction posed by lengthy sequences of speech tokens. In this work, we introduce VADUSA, one of the first approaches to accelerate auto-regressive TTS through speculative decoding. Our results show that VADUSA not only significantly improves inference speed but also enhances performance by incorporating draft heads to predict future speech content auto-regressively. Furthermore, the inclusion of a tolerance mechanism during sampling accelerates inference without compromising quality. Our approach demonstrates strong generalization across large datasets and various types of speech tokens.",
+    "abstract_source": "https://arxiv.org/abs/2410.21951"
+  },
+  {
+    "id": "vec2wav2",
+    "title": "vec2wav 2.0: Advancing Voice Conversion via Discrete Token Vocoders",
+    "authors": [
+      "Yiwei Guo",
+      "Zhihan Li",
+      "Junjie Li",
+      "Chenpeng Du",
+      "Hankun Wang",
+      "Shuai Wang",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2024,
+    "venue": "arXiv",
+    "sort_date": "2024-09-03",
+    "first_posted": "2024-09-03",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2409.01995",
+      "Demo": "https://cantabile-kwok.github.io/vec2wav2/",
+      "Code": "https://github.com/cantabile-kwok/vec2wav2.0",
+      "Models": "https://huggingface.co/cantabile-kwok/vec2wav2.0"
+    },
+    "abstract": "We propose a new speech discrete token vocoder, vec2wav 2.0, which advances voice conversion (VC). We use discrete tokens from speech self-supervised models as the content features of source speech, and treat VC as a prompted vocoding task. To amend the loss of speaker timbre in the content tokens, vec2wav 2.0 utilizes the WavLM features to provide strong timbre-dependent information. A novel adaptive Snake activation function is proposed to better incorporate timbre into the waveform reconstruction process. In this way, vec2wav 2.0 learns to alter the speaker timbre appropriately given different reference prompts. Also, no supervised data is required for vec2wav 2.0 to be effectively trained. Experimental results demonstrate that vec2wav 2.0 outperforms all other baselines to a considerable margin in terms of audio quality and speaker similarity in any-to-any VC. Ablation studies verify the effects made by the proposed techniques. Moreover, vec2wav 2.0 achieves competitive cross-lingual VC even only trained on monolingual corpus. Thus, vec2wav 2.0 shows timbre can potentially be manipulated only by speech token vocoders, pushing the frontiers of VC and speech synthesis.",
+    "abstract_source": "https://arxiv.org/abs/2409.01995"
+  },
+  {
+    "id": "codecslime",
+    "title": "CodecSlime: Temporal Redundancy Compression of Neural Speech Codec via Dynamic Frame Rate",
+    "authors": [
+      "Hankun Wang",
+      "Yiwei Guo",
+      "Chongtian Shao",
+      "Bohan Li",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "ICASSP",
+    "sort_date": "2026-05-05",
+    "first_posted": "2025-06-26",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2506.21074",
+      "Publisher": "https://doi.org/10.1109/ICASSP55912.2026.11463766",
+      "Demo": "https://x-lance.github.io/codecslime/",
+      "Code": "https://github.com/X-LANCE/codecslime"
+    },
+    "abstract": "Neural speech codecs have been widely used in audio compression and various downstream tasks. Current mainstream codecs are fixed-frame-rate (FFR), which allocate the same number of tokens to every equal-duration slice. However, speech is inherently non-uniform in temporal information density. As a result, many tokens are wasted on steady-state segments like long vowels and silences. To address this mismatch, we present CodecSlime, a plugin-style method for compressing temporal redundancy through supporting dynamic frame rate (DFR) on neural speech codecs for the first time. Our method is unsupervised and architecture-agnostic, combining two key innovations, ScheDFR and Melt-and-Cool, for adapting inference and training, respectively. When integrated into a typical VQ-GAN codec backbone and operating at 40 Hz DFR (≈ 600 bps), the reconstruction WER of CodecSlime is reduced by up to 32% relative to conventional FFR baselines with the same model architecture and similar bitrates, while other metrics are also competitive. CodecSlime also enables flexible trade-offs between reconstruction quality and bitrate: a single model supports inference at multiple frame rates and consistently outperforms FFR models at the corresponding frame rates. Audio samples are available on the demo page.",
+    "abstract_source": "https://arxiv.org/abs/2506.21074",
+    "badge": "SPS Travel Grant"
+  },
+  {
+    "id": "modality-evolving",
+    "title": "Why Do Speech Language Models Fail to Generate Semantically Coherent Outputs? A Modality Evolving Perspective",
+    "authors": [
+      "Hankun Wang",
+      "Haoran Wang",
+      "Yiwei Guo",
+      "Zhihan Li",
+      "Chenpeng Du",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "ICASSP",
+    "sort_date": "2026-05-05",
+    "first_posted": "2024-12-22",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2412.17048",
+      "Publisher": "https://doi.org/10.1109/icassp55912.2026.11461483",
+      "Supplement": "https://x-lance.github.io/SLM-evolving/"
+    },
+    "badge": "Oral presentation",
+    "abstract": "Although text-based large language models exhibit human-level writing ability and remarkable intelligence, speech language models (SLMs) still struggle to generate semantically coherent outputs. There are several potential reasons for this performance degradation: (A) speech tokens mainly provide phonetic information rather than semantic information, (B) the length of speech sequences is much longer than that of text sequences, and (C) paralinguistic information, such as prosody, introduces additional complexity and variability. In this paper, we explore the influence of three key factors separately by transiting the modality from text to speech in an evolving manner. Our findings reveal that the impact of the three factors varies. Factor A has a relatively minor impact, factor B influences syntactical and semantic modeling more obviously, and factor C exerts the most significant impact, particularly in the basic lexical modeling. Based on these findings, we provide insights into the unique challenges of training SLMs and highlight pathways to develop more effective end-to-end SLMs.",
+    "abstract_source": "https://arxiv.org/abs/2412.17048"
+  },
+  {
+    "id": "dcar",
+    "title": "Robust and Efficient Autoregressive Speech Synthesis with Dynamic Chunk-wise Prediction Policy",
+    "authors": [
+      "Bohan Li",
+      "Zhihan Li",
+      "Haoran Wang",
+      "Hanglei Zhang",
+      "Yiwei Guo",
+      "Hankun Wang",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "ICASSP",
+    "sort_date": "2026-05-07",
+    "first_posted": "2025-06-27",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2506.22023",
+      "Publisher": "https://doi.org/10.1109/icassp55912.2026.11460315"
+    },
+    "abstract": "Recently, autoregressive (AR) language models have emerged as a dominant approach in speech synthesis, offering expressive generation and scalable training. However, conventional AR speech synthesis models relying on the next-token prediction paradigm often encounter significant challenges when handling long speech sequences. These models often struggle to construct stable frame-to-frame attention, leading to increased latency and degraded synthesis quality, thereby limiting their feasibility for real-time applications. To address these limitations, we introduce a novel dynamic chunk-wise autoregressive synthesis framework, termed DCAR, designed to enhance both efficiency and intelligibility robustness in AR speech generation. DCAR introduces a chunk-to-frame attention mechanism through training with multi-token prediction, enabling dynamic chunk prediction in variable speech contexts using a lightweight module trained on-policy. DCAR dynamically adjusts the token prediction span, significantly reducing the sequence length dependency while obtaining high synthesis quality. Comprehensive empirical evaluations demonstrate that DCAR substantially outperforms traditional next-token prediction models, achieving up to 72.27% intelligibility improvement and 2.61x inference speedup simultaneously on the test set. Furthermore, we conduct comprehensive analysis to support it as a versatile foundation for next-generation speech synthesis systems.",
+    "abstract_source": "https://arxiv.org/abs/2506.22023"
+  },
+  {
+    "id": "ahamask",
+    "title": "AHAMask: Reliable Task Specification for Large Audio Language Models Without Instructions",
+    "authors": [
+      "Yiwei Guo",
+      "Bohan Li",
+      "Hankun Wang",
+      "Zhihan Li",
+      "Shuai Wang",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "AAAI",
+    "sort_date": "2026-01-23",
+    "first_posted": "2025-09-01",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2509.01787",
+      "Publisher": "https://ojs.aaai.org/index.php/AAAI/article/view/39299",
+      "Code": "https://github.com/X-LANCE/SALMONN-AHAMask"
+    },
+    "abstract": "Although current large audio language models (LALMs) extend text large language models (LLMs) with generic acoustic understanding abilities, they usually suffer from prompt sensitivity, where different instructions of the same intention can yield drastically different outcomes. In this work, we propose AHAMask, where we simply mask some of the attention heads in the decoder-only LLM backbone of LALMs, to trigger specific acoustic task functionalities without instructions. These masks are efficiently obtained by training on an LALM, with the number of trainable parameters equal to the attention head count in its LLM backbone. We show by experiments that applying such selective attention head masks achieves comparable or even better performance than using instructions, either on single or composite tasks. Besides achieving reliable acoustic task specification for LALMs, this also reveals that LALMs exhibit certain \"functional pathways\" in their attention heads.",
+    "abstract_source": "https://arxiv.org/abs/2509.01787"
+  },
+  {
+    "id": "holitok",
+    "title": "HoliTok: A Continuous Holistic Tokenization with Robust Dual Capabilities of Speech Generation and Understanding",
+    "authors": [
+      "Bohan Li",
+      "Shi Lian",
+      "Hankun Wang",
+      "Yiwei Guo",
+      "Yu Xi",
+      "Zhihan Li",
+      "Da Zheng",
+      "Colin Zhang",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "EMNLP",
+    "sort_date": "2026-09-05",
+    "first_posted": "2026-05-28",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2605.29948",
+      "Code": "https://github.com/bovod-sjtu/HoliTok",
+      "Models": "https://huggingface.co/bovod-sjtu/HoliTok"
+    },
+    "badge": "Oral presentation",
+    "abstract": "Unified speech foundation models require a holistic tokenization space that is both learnable by language models and decodable into high-quality waveforms. Existing speech tokenizers, however, often fail to satisfy these requirements simultaneously, leading to increased architectural complexity and more involved training designs. We propose HoliTok, a continuous Holistic speech Tokenization model designed for unified generation-understanding modeling. HoliTok encodes 48 kHz speech into a compact 25 Hz sequence of 128-dimensional latents. It is trained with a progressive strategy that jointly preserves signal-level fidelity, incorporates semantic information, and maintains strong latent learnability. Based on this tokenization, we build a unified AR+DiT model for speech synthesis and recognition, where the same latent sequence supports both generation-specific and unified generation-understanding tasks. Experiments show that HoliTok achieves competitive reconstruction fidelity, improves generative learnability for high-quality and controllable synthesis, and, among the evaluated representations, is the only one that operates robustly in our unified generation-understanding architecture without additional optimization tricks. These results suggest that HoliTok serves as an effective speech tokenizer and a foundational representation interface for unified spoken language modeling. The code is available in the linked repository.",
+    "abstract_source": "https://arxiv.org/abs/2605.29948",
+    "venue_note": "Main"
+  },
+  {
+    "id": "general-codec",
+    "title": "Towards General Discrete Speech Codec for Complex Acoustic Environments: A Study of Reconstruction and Downstream Task Consistency",
+    "authors": [
+      "Haoran Wang",
+      "Guanyu Chen",
+      "Bohan Li",
+      "Hankun Wang",
+      "Yiwei Guo",
+      "Zhihan Li",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2025,
+    "venue": "ASRU",
+    "sort_date": "2025-12",
+    "first_posted": "2025-05-28",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2505.22515",
+      "Publisher": "https://doi.org/10.1109/asru65441.2025.11434796"
+    },
+    "abstract": "Neural speech codecs excel in reconstructing clean speech signals; however, their efficacy in complex acoustic environments and downstream signal processing tasks remains underexplored. In this study, we introduce a novel benchmark named Environment-Resilient Speech Codec Benchmark (ERSB) to systematically evaluate whether neural speech codecs are environment-resilient. Specifically, we assess two key capabilities: (1) robust reconstruction, which measures the preservation of both speech and non-speech acoustic details, and (2) downstream task consistency, which ensures minimal deviation in downstream signal processing tasks when using reconstructed speech instead of the original. Our comprehensive experiments reveal that complex acoustic environments significantly degrade signal reconstruction and downstream task consistency. This work highlights the limitations of current speech codecs and raises a future direction that improves them for greater environmental resilience.",
+    "abstract_source": "https://arxiv.org/abs/2505.22515"
+  },
+  {
+    "id": "aci",
+    "title": "Attention-Constrained Inference for Robust Decoder-Only Text-to-Speech",
+    "authors": [
+      "Hankun Wang",
+      "Chenpeng Du",
+      "Yiwei Guo",
+      "Shuai Wang",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2024,
+    "venue": "SLT",
+    "sort_date": "2024-12",
+    "first_posted": "2024-04-30",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2404.19723",
+      "Publisher": "https://doi.org/10.1109/slt61566.2024.10832301"
+    },
+    "abstract": "Recent popular decoder-only text-to-speech models are known for their ability of generating natural-sounding speech. However, such models sometimes suffer from word skipping and repeating due to the lack of explicit monotonic alignment constraints. In this paper, we notice from the attention maps that some particular attention heads of the decoder-only model indicate the alignments between speech and text. We call the attention maps of those heads Alignment-Emerged Attention Maps (AEAMs). Based on this discovery, we propose a novel inference method without altering the training process, named Attention-Constrained Inference (ACI), to facilitate monotonic synthesis. It first identifies AEAMs using the Attention Sweeping algorithm and then applies constraining masks on AEAMs. Our experimental results on decoder-only TTS model VALL-E show that the WER of synthesized speech is reduced by up to 20.5% relatively with ACI while the naturalness and speaker similarity are comparable.",
+    "abstract_source": "https://arxiv.org/abs/2404.19723"
+  },
+  {
+    "id": "dots-tts-edit",
+    "title": "dots.tts.edit: Precisely Controlled Speech Editing with a Continuous Autoregressive Model",
+    "authors": [
+      "Hankun Wang",
+      "Bohan Li",
+      "Shi Lian",
+      "Xiaoyu Gu",
+      "Jing Peng",
+      "Da Zheng",
+      "Yiwei Guo",
+      "Colin Zhang",
+      "Shuai Wang",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "sort_date": "2026-08-02",
+    "first_posted": "2026-08-02",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2608.02673",
+      "Demo": "https://huggingface.co/spaces/dots-studio/dots.tts.edit-demo",
+      "Playground": "https://dots-studio-dots-tts-edit.hf.space/",
+      "Code": "https://github.com/studio-dots-ai/dots.tts",
+      "Models": "https://huggingface.co/dots-studio/dots.tts.edit",
+      "Benchmark": "https://github.com/studio-dots-ai/doteBench"
+    },
+    "abstract": "Speech editing for content creation requires precise control over both what an edit should do and where it should apply. Free-form natural language provides a flexible interface for expressing edit requests, but its ambiguity may leave the intended operation, parameters, or target region underspecified. We study a precise and explicit interface for speech editing: a transcript-grounded structural edit instruction with XML-style tags explicitly specifies typed operations and localizes them to transcript spans or boundaries. This semantic timeline avoids explicit timestamp alignment and provides an externally inspectable contract for compositional edits. We instantiate the interface in dots.tts.edit, an editor adapted from the continuous autoregressive dots.tts foundation model. Four representative speech-creation controls cover lexical content, affective expression, pitch and speaking-rate delivery, and temporal phrasing through text, emotion, prosody, and pause editing. Task-specific data pipelines construct operation- and scope-controlled pairs while retaining source-derived context outside each target region. We further introduce doteBench, a bilingual evaluation suite that measures precise instruction following, local preservation, and audio quality across the four controls and their composition. Experiments show leading overall instruction following and local preservation across its five editing categories, while audio quality remains comparable to existing open-source systems. Across three Seed-TTS-Eval shards, the model shows negligible differences from the base model in zero-shot TTS recognition error rate and speaker similarity.",
+    "abstract_source": "https://arxiv.org/abs/2608.02673"
+  },
+  {
+    "id": "dots-tts",
+    "title": "dots.tts Technical Report",
+    "authors": [
+      "Shi Lian",
+      "Changtao Li",
+      "Bohan Li",
+      "Hankun Wang",
+      "Da Zheng",
+      "Junfeng Tian",
+      "Yufeng Ma",
+      "Colin Zhang",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "sort_date": "2026-06-05",
+    "first_posted": "2026-06-05",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2606.07080",
+      "Demo": "https://studio-dots-ai.github.io/dots.tts-demo/",
+      "Code": "https://github.com/studio-dots-ai/dots.tts",
+      "Models": "https://huggingface.co/collections/dots-studio/dotstts"
+    },
+    "abstract": "We present dots.tts, a 2B-parameter continuous autoregressive text-to-speech (TTS) foundation model that models speech in a continuous latent space. Compared with existing continuous autoregressive models, our key innovations are threefold. First, we train an AudioVAE with multiple objectives to build a semantically structured and prediction-friendly continuous speech space. Second, we use full-history conditioning in the flow-matching head to preserve long-range consistency and reduce drift during generation. Third, we apply reward-free self-corrective post-training to the flow-matching head to further improve robustness and acoustic quality. After being trained on a large-scale multilingual corpus, dots.tts achieves the best average performance on Seed-TTS-Eval, with WERs of 0.94%/1.30%/6.60% and SIM scores of 81.0/77.1/79.5 on the zh/en/zh-hard test sets, respectively. Across other benchmarks, dots.tts also consistently demonstrates open-source state-of-the-art performance, exhibiting strong generation stability, voice cloning ability, and emotional expressiveness. For efficient inference, we further apply CFG-aware MeanFlow distillation, enabling low-latency speech generation with first-packet latencies of 85/54 ms in output streaming and dual-streaming modes, respectively. To facilitate reproducible research and practical deployment, we release the training and inference code, together with the pretrained, post-trained, and MeanFlow-distilled models, under the Apache 2.0 license.",
+    "abstract_source": "https://arxiv.org/abs/2606.07080"
+  },
+  {
+    "id": "read-what-you-hear",
+    "title": "Read What You Hear: Reference-Free Hypotheses Evaluation with Acoustic Discrepancy",
+    "authors": [
+      "Zhihan Li",
+      "Hankun Wang",
+      "Yiwei Guo",
+      "Bohan Li",
+      "Xie Chen",
+      "Kai Yu"
+    ],
+    "year": 2026,
+    "venue": "Interspeech",
+    "sort_date": "2026-09",
+    "first_posted": "2026-06-03",
+    "links": {
+      "Paper": "https://arxiv.org/abs/2606.04680",
+      "Publisher": "https://www.isca-archive.org/interspeech_2026/li26ka_interspeech.html"
+    },
+    "abstract": "Automatic speech recognition systems commonly rely on reference transcriptions for evaluation, while reference-free approaches often depend on internal confidence estimation or auxiliary language models. We propose READ (Reference-free Hypothesis Evaluation with Acoustic Discrepancy), a novel metric that evaluates ASR hypotheses directly from the speech signal. READ emphasizes the acoustic grounding of hypotheses. It uses a pretrained auto-regressive TTS model to compute the conditional likelihood of speech tokens given a text hypothesis, to measure fine-grained acoustic discrepancy between speech and text. Without additional training, READ can be applied for hypothesis refinement. Experiments show that READ correlates with specific recognition errors and improves ASR outputs, achieving up to 20% relative error rate reduction, with particularly strong gains under noisy conditions.",
+    "abstract_source": "https://arxiv.org/abs/2606.04680"
+  }
+]
